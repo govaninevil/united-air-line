@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="style/easy-responsive-tabs.css " />
+
+</head>
+
+<body>
+    <div id="main-from" class="max-w-[568px]">
+        <ul class="resp-tabs-list hor_1">
+            <li class="w-1/4 text-center">Book</li>
+            <li class="w-1/4 text-center">Flight status</li>
+            <li class="w-1/4 text-center">Check-in</li>
+            <li class="w-1/4 text-center">My trips</li>
+        </ul>
+        <div class="resp-tabs-container hor_1">
+            <div>
+                <div id="sub-from">
+                    <ul class="resp-tabs-list hor_2">
+                        <li>FLIGHT</li>
+                        <li>HOTEL</li>
+                        <li>CAR</li>
+                        <li>PACKAGES</li>
+                    </ul>
+                    <div class="resp-tabs-container hor_2">
+                        <div>
+                            <div class="inner-box mt-[19px]">
+                                <div class="redio-line ">
+                                    <form action="" class="round-trip flex justify-between items-center">
+                                        <div>
+                                            <input type="radio" id="round" name="round" value="Roundtrip">
+                                            <label for="round">Roundtrip</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="one-way" name="one-way" value="one-way">
+                                            <label for="one-way">One-way</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="miles" name="miles" value="book-with-miles">
+                                            <label for="miles"> Book with miles</label><br>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="flexible" name="flexible" value="flexible-date">
+                                            <label for="flexible"> Flexible dates</label><br>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="from-to-line mt-[24px]">
+                                    <form action="" class="flex justify-between items-center">
+                                        <div class="mr-[20px] relative">
+                                            <label for="from" class="block w-min">From*</label>
+                                            <input type="text" name="from" id="from"
+                                                class="text-[24px] w-full border-b border-black" placeholder="From*">
+                                        </div>
+                                        <img src="image/ARROW.svg" alt="arrow">
+                                        <div class="ml-[20px] relative">
+                                            <label for="to" class="block">To*</label>
+                                            <input type="text" name="to" id="to"
+                                                class="text-[24px] w-full border-b border-black" placeholder="To">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="date flex justify-between items-center mt-[25px]">
+                                    <form action="" class="flex items-center border-b border-black w-[44%]">
+                                        <div>
+                                            <label for="month block w-max">Dates*</label>
+                                            <select name="month" id="month" class="text-[24px]">
+                                                <option value="JAN">JAN</option>
+                                                <option value="FEB">FEB</option>
+                                                <option value="MAR">MAR</option>
+                                                <option value="APR">APR</option>
+                                                <option value="MAY">MAY</option>
+                                                <option value="JUN">JUN</option>
+                                                <option value="JULY">JULY</option>
+                                                <option value="AUG">AUG</option>
+                                                <option value="OCT">OCT</option>
+                                                <option value="NOV">NOV</option>
+                                                <option value="DEC">DEC</option>
+                                            </select>
+                                        </div>
+                                        <select name="days" id="days" class="text-[24px] mt-[20px]">
+                                            <option value="0">0 days</option>
+                                            <option value="1">1 days</option>
+                                            <option value="2">2 days</option>
+                                            <option value="3">3 days</option>
+                                            <option value="4">4 days</option>
+                                            <option value="5">5 days</option>
+                                            <option value="6">6 days</option>
+                                            <option value="7">7 days</option>
+                                            <option value="8">8 days</option>
+                                            <option value="9">9 days</option>
+                                            <option value="10">10 days</option>
+                                            <option value="11">11 days</option>
+                                            <option value="12">12 days</option>
+                                            <option value="13">13 days</option>
+                                            <option value="14">14 days</option>
+                                            <option value="15">15 days</option>
+                                            <option value="16">16 days</option>
+                                            <option value="17">17 days</option>
+                                            <option value="18">18 days</option>
+                                            <option value="19">19 days</option>
+                                            <option value="20">20 days</option>
+                                            <option value="21">21 days</option>
+                                            <option value="22">22 days</option>
+                                            <option value="23">23 days</option>
+                                            <option value="24">24 days</option>
+                                            <option value="25">25 days</option>
+                                            <option value="30">30 days</option>
+                                            <option value="60">60 days</option>
+                                            <option value="90">90 days</option>
+                                            <option value="120">120 days</option>
+                                            <option value="180">180 days</option>
+                                        </select>
+                                    </form>
+                                    <form action="" class="w-[44%]">
+                                        <label for="passenger block w-min ">passenger</label>
+                                        <input type="number" name="passenger" id="passenger"
+                                            class="text-[24px] w-full  border-b border-black">
+                                    </form>
+                                </div>
+                                <div class="profile flex justify-between items-center mt-[25px]">
+                                    <form action="" class="flex justify-between items-center">
+                                        <div class="mr-[30px] relative">
+                                            <label for="from" class="block w-min">Name*</label>
+                                            <input type="text" name="from" id="from"
+                                                class="text-[24px] w-full border-b border-black" placeholder="Name*">
+                                        </div>
+                                        <div class="ml-[30px] relative">
+                                            <label for="to" class="block">Email*</label>
+                                            <input type="text" name="to" id="to"
+                                                class="text-[24px] w-full border-b border-black" placeholder="email">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="economy">
+                                    <form action="">
+                                        <select name="economy" id="economy"
+                                            class="text-[24px] border-b border-black mt-[25px]">
+                                            <option value="economy">Economy</option>
+                                            <option value="Premium-economy">Premium economy</option>
+                                            <option value="Business">Business or Frist</option>
+                                        </select>
+                                    </form>
+                                </div>
+                                <div class="submit mt-[25px] flex items-center justify-between">
+                                    <div class="left mr-3">
+                                        <a href="#" class="inline-block text-[12px] text-[#2172ba]">Advance </a>
+                                        <p class=" min-h-min text-[12px] mb-[15px]">(Certificates, multi-city and
+                                            upgrades)</p>
+                                        <p class="min-h-min text-[12px]"><a href="#" class="border-b">Bag rules</a> and
+                                            <a href="#" class="border-b">fees for optional services</a></p>
+                                    </div>
+                                    <div class="right ml-3">
+                                        <a href="#"
+                                            class="py-3 px-6 text-[18px] block text-center bg-[#6244bb] rounded text-white">Find
+                                            Flights</a>
+
+                                        <a href="#"
+                                            class="py-3 px-6 text-[18px] block text-center border border-[#6244bb] text-[#6244bb] rounded mt-2">Find
+                                            your travel credits</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="inner-box">
+                                <div class="form flex justify-between items-center">
+                                    <div class="mr-[20px] w-[50%]">
+                                        <label for="from" class="block w-min">Name</label>
+                                        <input type="text" name="from" id="from"
+                                            class="text-[24px] w-full border-b border-black" placeholder="Name">
+                                    </div>
+                                    <div class="ml-[20px] w-[50%]">
+                                        <label for="from" class="block w-max">Going to*</label>
+                                        <input type="text" name="from" id="from"
+                                            class="text-[24px] w-full border-b border-black" placeholder="Going to*">
+                                    </div>
+                                </div>
+                                <div class="form flex justify-between items-center mt-[20px]">
+                                    <div class="mr-[20px] w-[50%]">
+                                        <label for="from" class="block w-max">No of travelers</label>
+                                        <input type="number" name="from" id="from"
+                                            class="text-[24px] w-full border-b border-black">
+                                    </div>
+                                    <div class="ml-[20px] w-[50%]">
+                                        <label for="room" class="block w-max">No of Rooms</label>
+                                        <select name="room" id="room" class="text-[24px] w-full border-b border-black">
+                                            <option value="1">1 Room</option>
+                                            <option value="1">2 Rooms</option>
+                                            <option value="1">3 Rooms</option>
+                                            <option value="1">4 Rooms</option>
+                                            <option value="1">5 Rooms</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <label for="from" class="block w-min">dates</label>
+                                    <div class="flex justify-between items-center">
+                                        <input type="date" name="from" id="from"
+                                            class="text-[24px] border-b border-black w-[50%] mr-[20px]"
+                                            placeholder="Check-in">
+                                        <P>-</P>
+                                        <input type="date" name="from" id="from"
+                                            class="text-[24px] border-b border-black w-[50%] ml-[20px]"
+                                            placeholder="Check-out">
+                                    </div>
+                                </div>
+                                <div class="btn ml-[55%] mt-[20px]">
+                                    <div class="left">
+                                        <input type="checkbox" name="miles" id="miles" class="mr-[10px]">
+                                        <label for="miles">Book with miles</label>
+                                    </div>
+                                    <div class="right mt-[10px]">
+                                        <a href="#" class="py-2 px-4 bg-[#6244bb] block text-center text-[#ffffff]">Find
+                                            hotels</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <div class="inner-box">
+                                <div class="form flex justify-between items-center">
+                                    <div class="mr-[20px] w-[50%]">
+                                        <label for="from" class="block w-min">Name</label>
+                                        <input type="text" name="from" id="from"
+                                            class="text-[24px] w-full border-b border-black" placeholder="Name">
+                                    </div>
+                                    <div class="ml-[20px] w-[50%]">
+                                        <label for="from" class="block w-max">Conyact No</label>
+                                        <input type="text" name="from" id="from"
+                                            class="text-[24px] w-full border-b border-black" placeholder="Contact No*">
+                                    </div>
+                                </div>
+                                <div class="form flex justify-between items-center mt-[20px]">
+                                    <div class="mr-[20px] w-[50%]">
+                                        <label for="from" class="block w-max">Pick Up*</label>
+                                        <input type="date" name="from" id="from"
+                                            class="text-[24px] w-full border-b border-black" placeholder="Pick Up">
+                                    </div>
+                                    <div class="ml-[20px] w-[50%]">
+                                        <label for="from" class="block w-max">Drop Off</label>
+                                        <input type="date" name="from" id="from"
+                                            class="text-[24px] w-full border-b border-black" placeholder="Pick Up">
+                                    </div>
+                                </div>
+                                <div class="form flex justify-between items-center mt-[20px]">
+                                    <div class="mr-[20px] w-[50%]">
+                                        <label for="from" class="block w-max">Pick-Up Location</label>
+                                        <input type="text" name="from" id="from"
+                                            class="text-[24px] w-full border-b border-black" placeholder="Pick-up Location">
+                                    </div>
+                                    <div class="ml-[20px] w-[50%]">
+                                        <label for="from" class="block w-max">Drop-off Location</label>
+                                        <input type="text" name="from" id="from"
+                                            class="text-[24px] w-full border-b border-black" placeholder="Drop-off Location">
+                                    </div>
+                                </div>
+                                <div class="btn flex justify-between items-center mt-[20px]">
+                                    <div class="left w-2/4 mr-[20px]">
+                                        <img src="image/car-img.svg" alt="car-img" class="mb-[10px]">
+                                        <p class="text-[12px]">MileagePlus members get special savings on rentals and earn miles.</p>
+                                    </div>
+                                    <div class="right w-2/4 ml-[20px]">
+                                        <input type="checkbox" name="miles" id="miles" class="mr-[10px]">
+                                        <label for="miles">Book with miles</label>
+                                        <a href="#" class="py-2 px-4 bg-[#6244bb] block text-center text-[#ffffff]">Find
+                                            Cars</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="inner-box">
+                                <div class="from-to-line mt-[24px]">
+                                    <form action="" class="flex justify-between items-center">
+                                        <div class="mr-[20px] relative">
+                                            <label for="from" class="block w-min">From*</label>
+                                            <input type="text" name="from" id="from"
+                                                class="text-[24px] w-full border-b border-black" placeholder="From*">
+                                        </div>
+                                        <img src="image/ARROW.svg" alt="arrow">
+                                        <div class="ml-[20px] relative">
+                                            <label for="to" class="block">To*</label>
+                                            <input type="text" name="to" id="to"
+                                                class="text-[24px] w-full border-b border-black" placeholder="To">
+                                        </div>
+                                    </form>
+                                </div>
+                                <form action="" class="w-[44%]">
+                                    <label for="passenger block w-min ">passenger</label>
+                                    <input type="number" name="passenger" id="passenger"
+                                        class="text-[24px] w-full  border-b border-black">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="inner-box">
+                    <h2 class="my-[24px] text-[24px]">Flight Status</h2>
+                    <div class="form flex justify-between items-center">
+                        <div class="mr-[20px] w-[50%]">
+                            <label for="from" class="block w-min">From</label>
+                            <input type="text" name="from" id="from" class="text-[24px] w-full border-b border-black"
+                                placeholder="From">
+                        </div>
+                        <div class="m-[20px] w-[50%]">
+                            <label for="from" class="block w-max">To</label>
+                            <input type="text" name="from" id="from" class="text-[24px] w-full border-b border-black"
+                                placeholder="To">
+                        </div>
+                    </div>
+                    <p>and/or</p>
+                    <div class="form flex justify-between items-center">
+                        <div class="mr-[20px] w-[50%]">
+                            <label for="from" class="block w-max">Flight number</label>
+                            <input type="text" name="from" id="from" class="text-[24px] w-full border-b border-black"
+                                placeholder="Flight no.">
+                        </div>
+                        <div class="m-[20px] w-[50%]">
+                            <label for="from" class="block w-max">Date</label>
+                            <input type="date" name="from" id="from" class="text-[24px] w-full border-b border-black">
+                        </div>
+                    </div>
+                    <div class="btn flex justify-between items-center">
+                        <div class="left w-[50%] text-[15px] pr-[10px]">
+                            <a href="#">Receive flight status notifications by email or text message</a>
+                        </div>
+                        <div class="right w-[50%]">
+                            <a href="#"
+                                class="py-3 px-6 text-[18px] block text-center bg-[#6244bb] rounded text-white mr-[20px]">search</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="inner-box">
+                    <h2 class="my-[24px] text-[24px]">Check in</h2>
+                    <div class="form">
+                        <div class="mt-[20px]">
+                            <label for="from" class="block w-max">Confirmation or ticket number*</label>
+                            <input type="text" name="from" id="from" class="text-[24px] w-full border-b border-black"
+                                placeholder="Confirmation number*">
+                        </div>
+                    </div>
+                    <div class="form">
+                        <div class="mt-[20px]">
+                            <label for="from" class="block w-max">Last name*</label>
+                            <input type="text" name="from" id="from" class="text-[24px] w-full border-b border-black"
+                                placeholder="Last name*">
+                        </div>  
+                    </div>
+                    <div class="btn flex justify-between items-center mt-[20px]">
+                        <div class="left w-[50%] text-[15px] pr-[10px]">
+                            <a href="#">Check in with your MileagePlus number</a>
+                        </div>
+                        <div class="right w-[50%]">
+                            <a href="#"
+                                class="py-3 px-6 text-[18px] block text-center bg-[#6244bb] rounded text-white mr-[20px]">search</a>
+                        </div>
+                    </div>
+                    <div class="end-line mt-[20px]">
+                        <p class="text-[13px]">Check-in is available starting 24 hours before your scheduled departure. See our <a href="#">Check-in and Airport Processing Times</a> page for details.</p>
+                    </div> 
+                </div>
+            </div>
+            <div>
+                <div class="inner-box">
+                    <h2 class="my-[24px] text-[24px]">My Trips  </h2>
+                    <div class="form">
+                        <div class="mt-[20px]">
+                            <label for="from" class="block w-max">Confirmation number*</label>
+                            <input type="text" name="from" id="from" class="text-[24px] w-full border-b border-black"
+                                placeholder="Confirmation number*">
+                        </div>
+                    </div>
+                    <div class="form">
+                        <div class="mt-[20px]">
+                            <label for="from" class="block w-max">Last name*</label>
+                            <input type="text" name="from" id="from" class="text-[24px] w-full border-b border-black"
+                                placeholder="Last name*">
+                        </div>  
+                    </div>
+                    <div class="btn flex justify-between items-center mt-[20px]">
+                        
+                        <div class="right w-[50%]">
+                            <a href="#"
+                                class="py-3 px-6 text-[18px] block text-center bg-[#6244bb] rounded text-white mr-[20px]">search</a>
+                        </div>
+                        <div class="left w-[50%] text-[15px] pr-[10px]">
+                            <a href="#">Check in with your MileagePlus number</a>
+                        </div>
+                    </div>
+                    <div class="end-line mt-[20px]">
+                        <p class="text-[13px]">Looking for past or canceled flights?<a href="#">Sign in.</a></p>
+                    </div> 
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="customer-section">
+        <div class="container">
+            <div class="inner-box">
+                <h2>Prepared for the Air</h2>
+                <p>Everything you need in one place so you’re ready for your trip</p>
+                <a href="#">Travel with confidence</a>
+            </div>
+            <div class="inner-box">
+                <h2>Where's open, what's required?</h2>
+                <p>Entry restrictions and COVID-19 travel requirements for countries around the world.</p>
+                <a href="#">Star exploring</a>
+            </div>
+        </div>
+    </div>
+    <div class="onboard section">
+        <div class="container">
+            <div class="title">
+                Travel updates
+            </div>
+            <div class="onboard">
+                <div class="box">
+                    <img src="image/img-1.jpg" alt="">
+                    <div class="box-cantent">
+                        <h2>Airline partnerships</h2>
+                        <p>Our partnerships bring you more destinations and a seamless travel experience</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="image/img-2.jpg" alt="">
+                    <div class="box-cantent">
+                        <h2>Free inflight entertainment</h2>
+                        <p>All you need is the American app on your device to stream movies, music, TV shows and more
+                        </p>
+                        <a href="#">See what's playing</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="image/img-3.jpg" alt="">
+                    <div class="box-cantent">
+                        <h2>Main Cabin Extra</h2>
+                        <p>Enjoy more legroom and reserved overhead bin space </p>
+                        <a href="#">Book your seat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flight section">
+        <div class="container">
+            <div class="box">
+                <h2>News and offers</h2>
+                <a href="#">Checked bag fees and allowances</a>
+                <a href="#">Clubs and lounges</a>
+                <a href="#">Download the American app</a>
+            </div>
+            <div class="box">
+                <h2>Join the Advantage program</h2>
+                <div class="flex">
+                    <img src="image/img-5.jpg" alt="">
+                    <div class="content">
+                        <p>Turn miles into memories</p>
+                        <a href="#">Enroll now </a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <h2>Join the AAdvantage program</h2>
+                <div class="flex">
+                    <img src="image/img-4.jpg" alt="">
+                    <div class="content">
+                        <p>Turn miles into memories</p>
+                        <a href="#">Enroll now </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script/jquery-1.9.1.min.js"></script>
+    <script src="script/easyResponsiveTabs.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
