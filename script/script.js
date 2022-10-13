@@ -1,4 +1,10 @@
 $(document).ready(function() {
+
+    
+    $(document).on('click','.menu-btn',function(event){
+        $('body').toggleClass('menu-open');
+    });
+
     //Horizontal Tab
     $('#main-from').easyResponsiveTabs({
         type: 'default', //Types: default, vertical, accordion
