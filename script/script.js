@@ -32,4 +32,17 @@ $(document).ready(function() {
             $info.show();
         }
     });
+
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        autoplay:true,
+        autoplayTimeout:5000,
+        slideSpeed: 300, 
+        responsive:{
+            0:{
+                items:1
+            }
+        }
+    });
 });
